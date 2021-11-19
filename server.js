@@ -3,7 +3,7 @@ var session = require('express-session');
 var serverStatic = require('serve-static');
 var app = express();
 
-app.use(require('sanitize').middleware);
+// app.use(require('sanitize').middleware);
 
 app.use(serverStatic(__dirname + '/public'));
 
